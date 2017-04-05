@@ -1,0 +1,1 @@
+$SPARK_HOME/bin/spark-submit --master spark://golum:7077 server.py
