@@ -36,9 +36,13 @@ def predict_disease():
         # return json.dumps(result)
 
 
-@main.route("/")
+@main.route("/bc_feature")
 def choose_breast_cancer_features():
    return render_template('bc_feature.html')
+
+@main.route("/")
+def load_home_page():
+   return render_template('index.html')
 
 def create_app(spark_context):
     global prediction_engine
