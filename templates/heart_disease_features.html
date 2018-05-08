@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Heart Disease</title>
+
+    <!-- Bootstrap -->
+    <link rel= "stylesheet"  href= "{{ url_for('static',filename='bootstrap/css/bootstrap.min.css') }}">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+	<div class="row">
+		<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Request Details</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="01">Age</label>
+  <div class="col-md-4">
+  <input id="01" name="01" placeholder="Number" class="form-control input-md" required="" type="number" onkeypress="return event.charCode >= 48" min="0">
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="02">Sex</label>
+  <div class="col-md-4">
+      <select id="02" name="02" class="form-control">
+                  <option value="0">Female</option>
+                  <option value="1">Male</option>
+      </select>
+  </div>
+</div>
+    <!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="03">Chest Pain</label>
+  <div class="col-md-4">
+      <select id="03" name="03" class="form-control">
+                  <option value="0">Typical Angina</option>
+                  <option value="1">Atypical Angina</option>
+                  <option value="2">Non Anginal Pain</option>
+                  <option value="3">Asymptomatic</option>
+      </select>
+  </div>
+</div>
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="04">Triceps skin fold thickness</label>
+  <div class="col-md-4">
+     <input id="04" name="04" placeholder="mm Hg" class="form-control input-md" required="" type="number" onkeypress="return event.charCode >= 48" min="0" step=0.1>
+  </div>
+</div>
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="05">Cholestrol</label>
+  <div class="col-md-4">
+     <input id="05" name="05" placeholder="mg/dl" class="form-control input-md" required="" type="number" onkeypress="return event.charCode >= 48" min="0" step=0.1>
+  </div>
+</div>
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="06">Fasting Blood Sugar (>120 mg/dl)</label>
+  <div class="col-md-4">
+      <select id="06" name="06" class="form-control">
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+      </select>
+  </div>
+</div>
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="07">Resting Electrocardiographic Results</label>
+  <div class="col-md-4">
+      <select id="07" name="07" class="form-control">
+                  <option value="0">Normal</option>
+                  <option value="1">Having ST-T wave abnormality</option>
+                  <option value="2">Showing probable or definite left ventricular hypertrophy</option>
+      </select>
+  </div>
+</div>
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="08">Thalach</label>
+  <div class="col-md-4">
+      <input id="08" name="08" placeholder="Maximum heart rate achieved" class="form-control input-md" required="" type="number" onkeypress="return event.charCode >= 48" min="0" step=01>
+  </div>
+</div>
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="09">Excercise Induced Angina</label>
+  <div class="col-md-4">
+       <select id="09" name="09" class="form-control">
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+      </select>
+  </div>
+</div>
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="10">Old Peak</label>
+  <div class="col-md-4">
+      <input id="10" name="10" placeholder="ST depression induced by excercise relative to rest" class="form-control input-md" required="" type="number" onkeypress="return event.charCode >= 48" min="0" step=0.1>
+  </div>
+</div>
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="11">Slope</label>
+  <div class="col-md-4">
+       <select id="11" name="11" class="form-control">
+                  <option value="0">Upsloping</option>
+                  <option value="1">Flat</option>
+                  <option value="2">Downsloping</option>
+      </select>
+  </div>
+</div>
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="12">Number of major vessels coloured by fluoropsy</label>
+  <div class="col-md-4">
+       <select id="12" name="12" class="form-control">
+       			  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+      </select>
+  </div>
+</div>
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="13">Thal</label>
+  <div class="col-md-4">
+       <select id="13" name="13" class="form-control">
+       			  <option value="0">Normal</option>
+                  <option value="1">Fixed defect</option>
+                  <option value="2">Reversable defect</option>
+      </select>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-4">
+    <button id="submit" name="submit" class="btn btn-default" formmethod="post" formaction="http://192.168.10.155:5433/heart_result">Submit</button>
+
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+	</div>
+</div>
+  </body>
+</html>
+

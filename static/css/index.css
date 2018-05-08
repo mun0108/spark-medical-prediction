@@ -17,7 +17,7 @@ a:hover {
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
   
-  border: 1px solid #fff;
+  border: 1px solid #DD3333;
 }
 
 
@@ -34,7 +34,7 @@ body {
   background-size: 100% 100%;
 }
 body {
-  color: #fff;
+  color: #2B474C   ;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
@@ -82,8 +82,8 @@ body {
   padding-left: 0;
   font-size: 16px;
   font-weight: bold;
-  color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.75);
+  color: #2B474C; /* IE8 proofing */
+  
   border-bottom: 2px solid transparent;
 }
 .masthead-nav > li > a:hover,
@@ -95,7 +95,7 @@ body {
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
-  color: #fff;
+  color: #2B474C;
   border-bottom-color: #fff;
 }
 
